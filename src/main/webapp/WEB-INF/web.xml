@@ -1,0 +1,53 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE web-app PUBLIC
+ "-//Sun Microsystems, Inc.//DTD Web Application 2.3//EN"
+ "http://java.sun.com/dtd/web-app_2_3.dtd" >
+
+
+<web-app>
+  <servlet>
+    <servlet-name>MainServlets</servlet-name>
+    <servlet-class>logic.MainServlets</servlet-class>
+  </servlet>
+  <servlet>
+    <servlet-name>RedirectServlet</servlet-name>
+    <servlet-class>logic.RedirectServlet</servlet-class>
+  </servlet>
+  <servlet>
+    <servlet-name>CartServlet</servlet-name>
+    <servlet-class>logic.CartServlet</servlet-class>
+  </servlet>
+  <servlet>
+    <servlet-name>WelcomePageServlet</servlet-name>
+    <jsp-file>/WelcomePageServlet.jsp</jsp-file>
+  </servlet>
+  <servlet>
+    <servlet-name>TimeServlet</servlet-name>
+    <jsp-file>/TimeServlet.jsp</jsp-file>
+  </servlet>
+
+  <servlet-mapping>
+    <servlet-name>MainServlets</servlet-name>
+    <url-pattern>/main</url-pattern>
+  </servlet-mapping>
+  <servlet-mapping>
+    <servlet-name>CartServlet</servlet-name>
+    <url-pattern>/cart</url-pattern>
+  </servlet-mapping>
+  <servlet-mapping>
+    <servlet-name>RedirectServlet</servlet-name>
+    <url-pattern>/redirect</url-pattern>
+  </servlet-mapping>
+
+  <servlet-mapping>
+    <servlet-name>WelcomePageServlet</servlet-name>
+    <url-pattern>/</url-pattern>
+  </servlet-mapping>
+
+  <servlet-mapping>
+    <servlet-name>TimeServlet</servlet-name>
+    <url-pattern>/time</url-pattern>
+  </servlet-mapping>
+
+  <display-name>Archetype Created Web Application</display-name>
+</web-app>
