@@ -6,6 +6,18 @@
 
 <web-app>
   <servlet>
+    <servlet-name>DeleteCookies</servlet-name>
+    <servlet-class>logic.DeleteCookies</servlet-class>
+  </servlet>
+  <servlet>
+    <servlet-name>GetCookies</servlet-name>
+    <servlet-class>logic.GetCookies</servlet-class>
+  </servlet>
+  <servlet>
+    <servlet-name>SetCookiesServlet</servlet-name>
+    <servlet-class>logic.SetCookiesServlet</servlet-class>
+  </servlet>
+  <servlet>
     <servlet-name>MainServlets</servlet-name>
     <servlet-class>logic.MainServlets</servlet-class>
   </servlet>
@@ -25,6 +37,18 @@
     <servlet-name>TimeServlet</servlet-name>
     <jsp-file>/TimeServlet.jsp</jsp-file>
   </servlet>
+  <servlet-mapping>
+    <servlet-name>DeleteCookies</servlet-name>
+    <url-pattern>/deleteCookies</url-pattern>
+  </servlet-mapping>
+  <servlet-mapping>
+    <servlet-name>SetCookiesServlet</servlet-name>
+    <url-pattern>/Setcookies</url-pattern>
+  </servlet-mapping>
+  <servlet-mapping>
+    <servlet-name>GetCookies</servlet-name>
+    <url-pattern>/getCookies</url-pattern>
+  </servlet-mapping>
 
   <servlet-mapping>
     <servlet-name>MainServlets</servlet-name>
